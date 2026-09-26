@@ -22,27 +22,37 @@
 </head>
 <body>
   <h1>Dogevideos App</h1>
-  <p class="sub">A private, single-owner tool for managing one YouTube channel.</p>
+  <p class="sub">A private, single-operator automation tool for one person's own social media accounts.</p>
 
-  <p>This application is a personal automation tool built and used by a single individual to manage
-  their own YouTube channel. It is not a public service, is not offered to other users, and no one
-  besides its owner ever signs in to it.</p>
+  <p>Dogevideos App (also known by its internal project name, <code>yt-ai-pipeline</code>) is a personal
+  automation tool, built and run by a single individual (a hobby video creator) to manage their own
+  YouTube, TikTok and Instagram accounts. It is not a public service, is not offered to other users, and
+  no one besides its owner ever signs in to it.</p>
 
   <h2>What it does</h2>
   <ul>
-    <li>Uploads videos the owner produced to their own YouTube channel.</li>
-    <li>Reads the channel's own statistics (views, likes, video list) to show a dashboard.</li>
-    <li>Reads and, only after the owner's explicit confirmation for each one, replies to or moderates
-      comments on the owner's own videos.</li>
+    <li>Uploads short-form videos the owner produced to their own connected accounts.</li>
+    <li>Reads each connected account's own statistics (views, likes, video list) to show a dashboard.</li>
+    <li>On YouTube, reads and, only after the owner's explicit confirmation for each one, replies to or
+      moderates comments on the owner's own videos.</li>
   </ul>
-  <p>Every action that changes anything on YouTube happens only after the owner reviews it and clicks
-  confirm inside the application - nothing runs automatically without that review, except an optional,
-  separately opt-in scheduled-release feature the owner turns on themselves for their own planned
-  uploads.</p>
+  <p>Every action that publishes or changes anything on a connected account happens only after the owner
+  reviews it and clicks confirm inside the application - nothing runs automatically without that review,
+  except an optional, separately opt-in scheduled-release feature (YouTube only) the owner turns on
+  themselves for their own planned uploads.</p>
+
+  <h2>Platforms</h2>
+  <ul>
+    <li><b>YouTube</b> - active: uploading, statistics and (with a separate, later opt-in) comments.</li>
+    <li><b>TikTok</b> - Login Kit and Content Posting API integration built for the owner's own account;
+      videos are uploaded as private (self-only) until the developer app is approved for public posting.</li>
+    <li><b>Instagram</b> - integration built for the owner's own account; currently paused while access is
+      restricted at the platform level, independent of this application.</li>
+  </ul>
 
   <h2>Who can use it</h2>
-  <p>Nobody but its owner. It runs on the owner's own computer, authenticated only against the owner's
-  own Google account and the single YouTube channel they own.</p>
+  <p>Nobody but its owner. It runs on the owner's own computer, authenticated only against the owner's own
+  accounts on each platform - never anyone else's.</p>
 
   <p>See the <a href="privacy.html">Privacy Policy</a> for details on what data this application
   accesses and how it is handled, and the <a href="terms.html">Terms of Service</a> for the terms it

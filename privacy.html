@@ -27,12 +27,14 @@
   <p class="sub">Dogevideos App &middot; last updated 2026-09-25</p>
 
   <p>Dogevideos App is a personal, single-owner tool. It is used exclusively by its own developer and
-  owner to manage their own YouTube channel. This policy explains what data the application accesses
-  and how that data is handled - there is no wider audience, because no one else uses it.</p>
+  owner to manage their own YouTube, TikTok and Instagram accounts. This policy explains what data the
+  application accesses and how that data is handled - there is no wider audience, because no one else
+  uses it.</p>
 
   <h2>What data this application accesses</h2>
-  <p>The application signs in with Google OAuth to the owner's own Google account and requests the
-  following YouTube Data API v3 scopes, all limited to the owner's own channel:</p>
+  <p>The application signs in with each platform's own OAuth to the owner's own account there, and
+  requests only the scopes it needs for that platform, all limited to the owner's own channel/account:</p>
+  <p><b>YouTube Data API v3</b>:</p>
   <ul>
     <li><code>youtube.upload</code> - to upload videos the owner produced to their own channel.</li>
     <li><code>youtube.readonly</code> - to read the owner's own channel and video statistics
@@ -41,9 +43,19 @@
       the owner reviews and confirms each individual action inside the application, to reply to or
       hide/approve/reject a comment.</li>
   </ul>
+  <p><b>TikTok Login Kit / Content Posting API</b> (videos are uploaded as private/self-only until the
+  developer app is approved for public posting):</p>
+  <ul>
+    <li><code>user.info.basic</code> - to identify the owner's own TikTok account.</li>
+    <li><code>video.upload</code>, <code>video.publish</code> - to upload the owner's own produced videos
+      to their own TikTok account.</li>
+  </ul>
+  <p><b>Instagram Graph API</b> (currently inactive while access is restricted at the platform level):
+  reading the owner's own account and media statistics, and publishing the owner's own produced videos to
+  their own account.</p>
 
   <h2>How the data is used and stored</h2>
-  <p>All data read from the YouTube API (statistics, comments, video metadata) is stored only locally,
+  <p>All data read from any of these APIs (statistics, comments, video metadata) is stored only locally,
   on the owner's own computer, in a local database used to display trends and history inside the
   application. Nothing is uploaded to any third-party server, cloud service, or shared database.</p>
 
